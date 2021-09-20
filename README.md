@@ -20,3 +20,4 @@ Create a folder `test_images` in the root dir. Place your image(s) there. Open `
 * TensorFlow >= 2.6.0
 * TensorFlow Hub >= 0.12.0
 * Pillow >= 8.3.2
+* LiberationSansNarrow-Regular.ttf font (optional)
