@@ -10,7 +10,9 @@ List of objects considered as cars here are: 'Car','Bus','Van' and 'Truck'. To e
 Object detection is done by RCNN + Inception-ResNet-V2. To change this to a different model such as SSD + MobileNet V2, follow the instructions [here](https://www.tensorflow.org/hub/tutorials/object_detection).
 Object detection is first done for all objects. A maximum of the 100 highest confident objects are chosen. From this, cars are filtered out (>0.1 confidence is accpeted for cars). Car with the largest area is chosen as the primary car and the bounding box is drawn around it.
 
-Note: if the confidence level for car is <0.9, a warning is shown.
+### Warnings 
+* If the confidence level for car is <0.9, a warning is shown.
+* If no car is found, all returned values for `run_detector` function are -1 and a warning is shown.
 
 
 ## How to use?
@@ -20,4 +22,4 @@ Create a folder `test_images` in the root dir. Place your image(s) there. Open `
 * TensorFlow >= 2.6.0
 * TensorFlow Hub >= 0.12.0
 * Pillow >= 8.3.2
-* LiberationSansNarrow-Regular.ttf font (optional)
+* LiberationSansNarrow-Regular.ttf (optional)
