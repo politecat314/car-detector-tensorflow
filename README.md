@@ -19,7 +19,7 @@ Object detection is first done for all objects. A maximum of the 100 highest con
 Create a folder `test_images` in the root dir. Place your image(s) there. Open `RCNN Inception_Resnet_V2.ipynb` and run.
 
 ## Requirements
-* TensorFlow >= 2.6.0
+* TensorFlow >= 2.5
 * TensorFlow Hub >= 0.12.0
 * Pillow >= 8.3.2
 * LiberationSansNarrow-Regular.ttf (optional)
